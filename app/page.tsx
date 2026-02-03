@@ -4,18 +4,29 @@ import NewPreview from "@/components/home/NewPreview"
 import Categories from "@/components/home/Categories";
 import FadeInView from "@/components/animation/FadeInView"
 
+import InsetCard from "@/components/UI/InsetCard";
+import FullCard from "@/components/UI/FullCard";
+
+import Collapsible from "@/components/UI/Collapsible";
+
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
+      <div className="relative w-screen h-10 px-2 flex justify-between items-center bg-black">
+        <h1 className="text-white">KROEN</h1>
+      <h1 className="text-white">EN</h1>
+      </div>
+        
       <NavBar />
       <Splash />
 
-      
-      <NewPreview />
-
-      <Categories />
+      <InsetCard src="yes" header="a" desc="h" button="hey" />
+      <FullCard src="yes" header="a" desc="h" button="hey" />
+      <Collapsible text="contact us"/>
+      <Collapsible text="about"/>
+      <Collapsible text="find"/>
 
       
 

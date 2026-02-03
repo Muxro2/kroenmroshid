@@ -1,0 +1,43 @@
+import Image from 'next/image';
+
+type CardProps = {
+	src: string,
+	header: string,
+	desc: string,
+	button: string,
+	buttonColor?: string
+}
+
+export default function FullCard({src, header, desc, button, buttonColor}: CardProps) {
+	return (
+		<div className="relative w-full aspect-1/1">
+			<Image
+				src="/hero.webp"
+				alt=""
+				fill
+				className="-z-10"
+				/>
+
+			<div className="absolute inset-y-10 inset-x-6 flex flex-col justify-between text-white text-shadow-[0_0_4px] text-shadow-white/40">
+        <h1 className="text-[22px] font-bold">
+          Built for the Elements.
+        </h1>
+
+				<div>
+        <h2 className="text-[14px] mb-4">
+          Modern outdoor wear that fuses peformance, style, and sustainability.
+        </h2>
+
+        <div className="w-full text-[14px] flex justify-center gap-2">
+          <h1 className="flex-1 py-2 bg-black text-center text-white rounded-md">
+            Browse New
+          </h1>
+          <h1 className="flex-1 py-2 bg-white text-center text-black rounded-md">
+            Explore Collections
+          </h1>
+        </div>
+				</div>
+      </div>
+		</div>
+	)
+}

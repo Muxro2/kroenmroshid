@@ -18,7 +18,7 @@ function Box({src, caption} : {src: string, caption: string}) {
 
 export default function Categories() {
 	return (
-		<div className="w-full my-50 px-2 grid grid-cols-3 gap-x-2 gap-y-8 text-white text-shadow-lg/50">
+		<div className="w-full my-50 px-2 grid grid-cols-3 gap-x-2 gap-y-8 text-white text-shadow-lg/50 overflow-hidden">
       <Box src="coats_thumb" caption="COATS" />
       <Box src="tops_thumb" caption="TOPS" />
       <Box src="pants_thumb" caption="PANTS" />

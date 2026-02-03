@@ -1,10 +1,10 @@
-import { Barlow_Condensed } from 'next/font/google'
+import { Brawler } from 'next/font/google'
 import type { Metadata } from "next";
 import './globals.css'
 
-const barlow = Barlow_Condensed({
+const brawler = Brawler({
   subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
+  weight: ['400', '700'],
 })
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={barlow.className}>
+    <html lang="en" className={brawler.className}>
       <body>
         {children}
       </body>

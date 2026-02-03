@@ -4,27 +4,28 @@ import Image from "next/image";
 import {motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 export default function NavBar() {
+  
   const {scrollY} = useScroll()
-  const logoScale = useTransform(scrollY, [500,550], [1, 0.5])
-  const smoothScale = useSpring(logoScale, {mass: 0.1})
+  const navY = useTransform(scrollY, [0, 100], [0, 100])
+  const smoothY = useSpring(navY, {mass: .1})
 
   return (
-    <div className="fixed w-screen p-4 flex justify-between items-start z-10">
-      <motion.div style={{ scale: smoothScale }} className="origin-top-left relative">
+    <div className="absolute w-[90%] m-[5%] px-4 py-3 flex justify-between items-center z-10 bg-white rounded-lg">
+      <div className="origin-top-left relative">
       <Image
         src="/logo.svg"
         alt="KROEN"
-        width={100}
-        height={100}
-        className="scale-120"
+        width={36}
+        height={30}
+        className="scale-130"
       />
-      </motion.div>
+      </div>
 
-      <div className="flex gap-1.5">
-        <Image src="/icons/bag.svg" alt="Cart" width={40} height={40} />
-        <Image src="/icons/face.svg" alt="Account" width={40} height={40} />
-        <Image src="/icons/search.svg" alt="Search" width={40} height={40} />
-        <Image src="/icons/menu.svg" alt="Menu" width={40} height={40} />
+      <div className="flex gap-2">
+        <Image src="/icons/bag.svg" alt="Cart" width={32} height={32} />
+        <Image src="/icons/face.svg" alt="Account" width={32} height={32} />
+        <Image src="/icons/search.svg" alt="Search" width={32} height={32} />
+        <Image src="/icons/menu.svg" alt="Menu" width={32} height={32} />
       </div>
     </div>
   );
