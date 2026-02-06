@@ -1,4 +1,5 @@
 export const collections = [
+	{name: "new", src: "/splash.webp"},
 	{name: "coats", src: "/thumbs/coats_thumb.WEBP"}, 
 	{name: "tops", src: "/thumbs/tops_thumb.WEBP"},
 	{name: "trousers", src: "/thumbs/pants_thumb.WEBP"},

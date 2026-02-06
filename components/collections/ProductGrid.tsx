@@ -14,7 +14,7 @@ export default function ProductGrid() {
 	return (
 			<div className="w-full grid grid-cols-2 gap-2 p-2">
 
-				{products.filter((product) => product.category == collection).map((product, i) => (
+				{[...products.filter((product) => product.tags.includes(collection)), ...products.filter((product) => product.category == collection)].map((product, i) => (
 
           <a key={product.id} href={`/${product.id}`} className="w-full p-4 flex flex-col items-center gap-4">
 					

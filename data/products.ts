@@ -51,7 +51,7 @@ export const products = [
 		rating: 5,
 		reviews: 841,
 		category: "tracks",
-		tags: ["bestseller", "top"],
+		tags: ["bestseller", "tops"],
 		description: "Premium hoodie crafted for daily wear with a refined athletic edge."
 	},
 	{
