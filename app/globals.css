@@ -9,6 +9,21 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  
+  --text-xl: 22px;
+  --text-lg: 18px;
+  --text-md: 16px;
+  --text-sm: 12px;
+  --text-xs: 10px;
+  
+  --font-zalando: var(--font-zalando);
+  
+}
+
+@layer components {
+  .title {
+    @apply font-bold text-xl;
+  }
 }
 
 body {

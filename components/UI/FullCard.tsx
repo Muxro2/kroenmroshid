@@ -12,28 +12,28 @@ export default function FullCard({src, header, desc, button, buttonColor}: CardP
 	return (
 		<div className="relative w-full aspect-1/1">
 			<Image
-				src="/hero.webp"
+				src="/thumbs/tops_thumb.WEBP"
 				alt=""
 				fill
-				className="-z-10"
+				className="object-cover -z-10"
 				/>
 
-			<div className="absolute inset-y-10 inset-x-6 flex flex-col justify-between text-white text-shadow-[0_0_4px] text-shadow-white/40">
-        <h1 className="text-[22px] font-bold">
+			<div className="absolute inset-y-10 inset-x-6 flex flex-col justify-between text-white">
+        <h1 className="title font-bold text-shadow-[0_0_4px] text-shadow-black">
           Built for the Elements.
         </h1>
 
 				<div>
-        <h2 className="text-[14px] mb-4">
+        <h2 className="w-[70%] text-md mb-4">
           Modern outdoor wear that fuses peformance, style, and sustainability.
         </h2>
 
-        <div className="w-full text-[14px] flex justify-center gap-2">
+        <div className="w-full text-md flex justify-center gap-2">
           <h1 className="flex-1 py-2 bg-black text-center text-white rounded-md">
             Browse New
           </h1>
           <h1 className="flex-1 py-2 bg-white text-center text-black rounded-md">
-            Explore Collections
+            Collections
           </h1>
         </div>
 				</div>

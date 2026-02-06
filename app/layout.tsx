@@ -1,15 +1,20 @@
-import { Brawler } from 'next/font/google'
+import { Vollkorn, Zalando_Sans_Expanded } from 'next/font/google'
 import type { Metadata } from "next";
 import './globals.css'
 
-const brawler = Brawler({
-  subsets: ['latin'],
-  weight: ['400', '700'],
+const vollkorn = Vollkorn({
+  weight: ['400', '600', '800'],
+  variable: '--font-vollkorn',
+})
+
+const zalando = Zalando_Sans_Expanded({
+  weight: ['200', '400', '500', '600', '800'],
+  variable: '--font-zalando',
 })
 
 export const metadata: Metadata = {
   title: "Kroen",
-  description: "The only place to get your Kroen",
+  description: "Kroen by MR",
 };
 
 export default function RootLayout({
@@ -18,8 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={brawler.className}>
-      <body>
+    <html lang="en"
+      className={`${vollkorn.variable}`}>
+      <body className={zalando.className}>
         {children}
       </body>
     </html>
