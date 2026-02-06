@@ -1,11 +1,11 @@
 import { create } from 'zustand';
 
-interface QueryStore {
+interface QueryState {
   collection: string;
-  setCollection: (newCollection: string) => void;
+  setCollection: (newCollection: string) => void
 }
 
-export const useQueryStore = create<QueryStore>((set) => ({
-  collection: '',
+export const useQueryStore = create<QueryState>((set) => ({
+  collection: 'coats',
   setCollection: (newCollection: string) => set({ collection: newCollection }),
 }))

@@ -1,15 +1,20 @@
+"use client"
+
 import Image from 'next/image';
 
 import Stars from "@/components/UI/Stars"
 
 import { products } from "@/data/products";
 
+import { useQueryStore } from "@/stores/queryStore"
 	
 export default function ProductGrid() {
+	const collection = useQueryStore((state) => state.collection);
+	
 	return (
 			<div className="w-full grid grid-cols-2 gap-2 p-2">
 
-				{products.map((product, i) => (
+				{products.filter((product) => product.category == collection).map((product, i) => (
 
           <a key={product.id} href={`/${product.id}`} className="w-full p-4 flex flex-col items-center gap-4">
 					

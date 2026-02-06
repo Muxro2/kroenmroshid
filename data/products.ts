@@ -17,7 +17,7 @@ export const products = [
 		images: ["/products/heathered-overlook-waffle.WEBP"],
 		rating: 4,
 		reviews: 389,
-		category: "top",
+		category: "tops",
 		tags: ["bestseller"],
 		description: "Textured waffle-knit top designed for comfort, warmth, and layering."
 	},
@@ -50,7 +50,7 @@ export const products = [
 		images: ["/products/kroenblue-overlook-hoodie.WEBP"],
 		rating: 5,
 		reviews: 841,
-		category: "track",
+		category: "tracks",
 		tags: ["bestseller", "top"],
 		description: "Premium hoodie crafted for daily wear with a refined athletic edge."
 	},
@@ -61,7 +61,7 @@ export const products = [
 		images: ["/products/kroenblue-overlook-trousers.WEBP"],
 		rating: 4,
 		reviews: 497,
-		category: "track",
+		category: "tracks",
 		tags: ["trousers"],
 		description: "Matching track trousers designed for comfort, mobility, and style."
 	},
@@ -72,7 +72,7 @@ export const products = [
 		images: ["/products/metro-shirt.WEBP"],
 		rating: 4,
 		reviews: 266,
-		category: "top",
+		category: "tops",
 		tags: [],
 		description: "Clean-cut shirt with a tailored feel for everyday city wear."
 	},
@@ -105,7 +105,7 @@ export const products = [
 		images: ["/products/oblique-puffer.WEBP"],
 		rating: 5,
 		reviews: 904,
-		category: "coat",
+		category: "coats",
 		tags: ["bestseller"],
 		description: "Insulated puffer jacket engineered for warmth in cold conditions."
 	},
@@ -116,7 +116,7 @@ export const products = [
 		images: ["/products/onyx-oblique-puffer.WEBP"],
 		rating: 5,
 		reviews: 732,
-		category: "coat",
+		category: "coats",
 		tags: ["new"],
 		description: "Refined black puffer offering maximum insulation with a sleek profile."
 	},
@@ -138,7 +138,7 @@ export const products = [
 		images: ["/products/swatchbook-oblique-puffer.WEBP"],
 		rating: 4,
 		reviews: 87,
-		category: "coat",
+		category: "coats",
 		tags: ["limited"],
 		description: "Material swatchbook showcasing fabrics used in the Oblique Puffer."
 	},
