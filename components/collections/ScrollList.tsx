@@ -18,6 +18,7 @@ export default function ScrollList() {
 					alt=""
 					fill
 					className="object-cover"
+					priority={i < 3 ? true : false}
 					/>
 					<h1 className="absolute bottom-4 left-4 text-white text-[16px] font-bold text-shadow-[0_0_4px] text-shadow-white/40">{item.name.toUpperCase()}</h1>
 			  </button>

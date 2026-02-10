@@ -24,6 +24,7 @@ export default function ProductGrid() {
 						alt=""
 						fill
 						className="object-cover"
+						priority={i < 4 ? true : false}
 						/>
 						</div>
 					
