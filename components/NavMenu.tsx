@@ -12,7 +12,7 @@ export default function NavMenu() {
 	const setMenuOpen = useMenuStore((state) => state.setMenuOpen);
 	
 	return (
-	  <div className="flex flex-col gap-2 ">
+	  <div className="flex flex-col items-center pt-6 gap-3 ">
 			{collections.map((collection,i) => (
 			<button 
 				key={i}
@@ -22,6 +22,18 @@ export default function NavMenu() {
 				router.push("/collections")
 			}} className="text-[16px] font-bold">{collection.name.toUpperCase()}</button>
 			))}
+			<div className="flex flex-col items-center gap-2 mt-4">
+				
+			<button onClick={() => {
+			  setMenuOpen(false)
+				router.push("/policies/refund-policy")}}
+				className="text-sm font-bold">REFUND POLICY</button>
+			<button onClick={() => {
+				setMenuOpen(false)
+				router.push("/policies/shipping-policy")}} className="text-sm font-bold">SHIPPING POLICY</button>
+			<Link href="/" className="text-sm font-bold">CONTACT</Link>
+			</div>
+			
 	  </div>
 	)
 }

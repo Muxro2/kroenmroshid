@@ -5,15 +5,15 @@ import { collections } from "@/data/collections";
 
 import { useQueryStore } from "@/stores/queryStore"
 export default function ScrollList() {
-	const ueryStore = useQueryStore((state) => state.collection)
+	const QueryStore = useQueryStore();
   const setCollection = useQueryStore((state) => state.setCollection);
 	
 	return (
-		<div className="w-full pt-18 pb-4 pl-6 gap-4 flex items-center overflow-scroll">
+		<div className="w-full h-50 mt-18 mb-4 px-50 gap-2 flex items-center overflow-x-scroll no-scrollbar snap-x snap-proximity overscroll-none">
 			
 			{collections.map((item, i) => (
 																						
-				<button onClick={() => setCollection(item.name)} key={i} className="relative flex-shrink-0 w-50 h-50 bg-linear-to-t from-[#0007] to-[50%] to-[#0000] shadow-md">
+				<button onClick={() => setCollection(item.name)} key={i} className={`${QueryStore.collection == item.name ? "w-50 h-50" : "w-45 h-45"  } relative flex-shrink-0 bg-linear-to-t from-[#0007] to-[50%] to-[#0000] shadow-md transition-all duration-300 snap-center`}>
 			    <Image
 					src={item.src}
 					alt=""

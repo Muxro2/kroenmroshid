@@ -18,7 +18,13 @@
   --text-xs: 10px;
   
   --font-zalando: var(--font-zalando);
-  
+
+}
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components {

@@ -6,6 +6,6 @@ interface QueryState {
 }
 
 export const useQueryStore = create<QueryState>((set) => ({
-  collection: 'coats',
+  collection: 'new',
   setCollection: (newCollection: string) => set({ collection: newCollection }),
 }))

@@ -17,7 +17,7 @@ export default function Footer() {
 
 
         <div className="relative w-full pt-8 pb-18 flex flex-col items-center gap-12 bg-black text-white">
-         <h1 className="w-[75%] text-sm leading-[16px] text-center">THE ONLY REAL PLACE TO GET YOUR KROEN. ANY OTHER WEBSITE IS A SCAM.</h1>
+         <h1 className="w-[45%] text-sm leading-[16px] text-center">THE ONLY PLACE TO GET YOUR KROEN.</h1>
           <div className="flex gap-4">
           <Image
             src="/icons/instagram.svg"
