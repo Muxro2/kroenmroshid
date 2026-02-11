@@ -11,28 +11,25 @@ export default function Splash() {
   return (
     <div className="relative w-full h-160 pt-18 flex overflow-hidden">
       <Image
-        src="/splash.webp"
+        src="/hero.jpeg"
         alt=""
         fill
         priority
-        className="object-cover -scale-x-110 scale-y-110 object-[25%_50%] -z-10"
+        className="object-cover -z-10 scale-120 object-[35%_0]"
       />
       <div className="w-screen mx-4 flex flex-col justify-center gap-8 text-white">
-        <h1 className="w-[45%] mb-8 title text-shadow-[0_0_4px] text-shadow-black">
-          Built for the Elements. Designed for Life.
+        <h1 className="w-[60%] mb-14 title font-bold text-shadow-[0_0_4px] text-shadow-black">
+          CONTROL YOUR CLIMATE
         </h1>
-        <h2 className="w-[70%] text-md ">
-          Modern outdoor wear that fuses peformance, style, and sustainability.
+        <h2 className="w-[50%] text-md text-shadow-lg">
+          Modern technical wear designed for life in motion.
         </h2>
 
-        <div className="w-full text-md flex justify-center gap-4">
-          <h1 className="flex-1 py-2 bg-black text-center text-white rounded-md">
-            Browse New
-          </h1>
-          <a href="/collections" className="flex-1 py-2 bg-white text-center text-black rounded-md">
-            Collections
+         
+          <a href="/collections" className="w-fit px-4 py-2 bg-white text-center text-black rounded-md shadow-lg">
+            Explore Collections
           </a>
-        </div>
+        
       </div>
     </div>
   );

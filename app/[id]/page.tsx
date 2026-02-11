@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import TopBar from "@/components/TopBar";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/UI/Footer";
 import Stars from "@/components/UI/Stars";
@@ -14,12 +15,13 @@ export default async function Product({ params }: { params: { id: string } }) {
 
 	return (
 		<>
-			<NavBar />
+			<TopBar />
+			<NavBar docked={true}/>
 			<div className="w-full pt-20"></div>
 
 			{product ? (
 				<div className="p-4">
-					<h1 className="">
+					<h1 className="text-sm">
 						KROEN {`>`} Coats {`>`} {product.name}
 					</h1>
 
