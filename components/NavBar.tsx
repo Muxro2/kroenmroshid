@@ -9,6 +9,8 @@ import { useMenuStore } from "@/stores/menuStore"
 
 import sleep from "@/lib/sleep";
 
+import NavMenu from "@/components/NavMenu";
+
 export default function NavBar({docked}: {docked?: boolean}) {
 
   const MenuStore = useMenuStore()
@@ -99,9 +101,8 @@ export default function NavBar({docked}: {docked?: boolean}) {
       </div>
       
       <div>
-        {["NEW", "COATS", "TOPS", "TROUSERS", "TRACKS", "ACCESSORIES"].map((item, i) => (
-          <div key={i} className="px-4 py-2 text-[16px] font-bold">{item}</div>
-        ))}
+        <NavMenu />
+        
       </div>
     </motion.div>
       
