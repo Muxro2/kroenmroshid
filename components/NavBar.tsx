@@ -58,7 +58,7 @@ export default function NavBar({docked}: {docked?: boolean}) {
   
   const navAnimate = {
     docked: {marginLeft: 0, marginTop: 0,  width: "100%", borderRadius: 0, transition: {duration: .2}},
-    undocked: {marginLeft: "5%", marginTop: "5%", width: "90%", borderRadius: 10, transition: {duration: .2}},
+    undocked: {marginLeft: "5%", marginTop: "2%", width: "92%", borderRadius: 10, transition: {duration: .2}},
 
     open: {height: "100%", transition: {duration: .3}},
     close: {height: 55, transition: {duration: .3}}
@@ -74,7 +74,7 @@ export default function NavBar({docked}: {docked?: boolean}) {
       initial={docked? ["docked", "close"] : ["undocked", "close"]}
       animate={controls}
       transition={{ease: "easeInOut"}}
-      className="rounded-lg absolute bg-white z-50 overflow-hidden">
+      className={`fixed top-10 rounded-lg bg-white z-50 shadow-md overflow-hidden`}>
       
       <div 
       className="rounded-lg flex justify-between items-center px-4 py-3 bg-white">
@@ -95,7 +95,7 @@ export default function NavBar({docked}: {docked?: boolean}) {
         <Image src="/icons/face.svg" alt="Account" width={32} height={32} priority/>
         <Image src="/icons/search.svg" alt="Search" width={32} height={32} priority/>
         <button onClick={() => openMenu(!menuOpen)}>
-        <Image src="/icons/menu.svg" alt="Menu" width={32} height={32} priority/>
+        <Image src={menuOpen? "/icons/cross.svg" : "/icons/menu.svg"} alt="Menu" width={32} height={32} priority/>
         </button>
       </div>
       </div>

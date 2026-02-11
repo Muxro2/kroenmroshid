@@ -17,7 +17,7 @@ export default async function Product({ params }: { params: { id: string } }) {
 		<>
 			<TopBar />
 			<NavBar docked={true}/>
-			<div className="w-full pt-20"></div>
+			<div className="w-full pt-28"></div>
 
 			{product ? (
 				<div className="p-4">

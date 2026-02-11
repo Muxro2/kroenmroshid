@@ -9,7 +9,7 @@ export default function ScrollList() {
   const setCollection = useQueryStore((state) => state.setCollection);
 	
 	return (
-		<div className="w-full h-50 mt-18 mb-4 px-50 gap-2 flex items-center overflow-x-scroll no-scrollbar snap-x snap-proximity overscroll-none">
+		<div className="w-full h-50 mt-28 mb-4 px-50 gap-2 flex items-center overflow-x-scroll no-scrollbar snap-x snap-proximity overscroll-none">
 			
 			{collections.map((item, i) => (
 																						

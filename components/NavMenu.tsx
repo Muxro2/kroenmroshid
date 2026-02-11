@@ -33,7 +33,7 @@ export default function NavMenu() {
 				router.push("/policies/shipping-policy")}} className="text-sm font-bold">SHIPPING POLICY</button>
 			<Link href="/" className="text-sm font-bold">CONTACT</Link>
 			</div>
-			
+			<h1 className="mt-4 text-sm">© 2026 KROEN</h1>
 	  </div>
 	)
 }

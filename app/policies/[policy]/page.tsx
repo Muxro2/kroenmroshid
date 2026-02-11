@@ -13,6 +13,7 @@ export default async function Policy({params} : {params: {policy: string}}) {
 
 		<TopBar />
 		<NavBar docked={true}/>
+			<div className="w-full pt-12"></div>
 			{policy == "refund-policy" && <RefundPolicy />}
 			{policy == "shipping-policy" && <ShippingPolicy />}
 		<Footer />
